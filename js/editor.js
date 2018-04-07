@@ -4,9 +4,9 @@ textarea.addEventListener('keydown', function(event) {
     
     if ( event.keyCode === 9 ) {
 
-        var selectionStartPos = this.selectionStart
-        var selectionEndPos = this.selectionEnd
-        var oldContent = this.value
+        const selectionStartPos = this.selectionStart
+        const selectionEndPos = this.selectionEnd
+        const oldContent = this.value
 
         this.value = oldContent.substring( 0, selectionStartPos ) + '  ' + oldContent.substring( selectionEndPos )
 
